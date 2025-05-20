@@ -22,6 +22,7 @@ Sistema de gestão para a fábrica de chocolates ChocoCharm, voltado para contro
 ## 👥 Divisão de Tarefas por Desenvolvedor
 
 ### 🧑‍💻 Dev 1 – **Banco de Dados & Acesso a Dados**
+- Paula Faustino - [GitHub](https://github.com/paula-faustino )
 **Responsabilidades:**
 - Modelagem do banco de dados (tabelas principais)
 - Scripts SQL para criação das tabelas
@@ -43,6 +44,7 @@ Sistema de gestão para a fábrica de chocolates ChocoCharm, voltado para contro
 ---
 
 ### 🧑‍💻 Dev 2 – **Interface Gráfica (Frontend)**
+- KaueAlvess - [GitHub](https://github.com/KaueAlvess )
 **Responsabilidades:**
 - Desenvolvimento das telas do sistema
 - Organização visual e navegação
@@ -66,6 +68,7 @@ Sistema de gestão para a fábrica de chocolates ChocoCharm, voltado para contro
 ---
 
 ### 🧑‍💻 Dev 3 – **Lógica de Negócio e Integração**
+- Mayara Santana - [GitHub](https://github.com/mayara8666 )
 **Responsabilidades:**
 - Lógica de negócios do sistema
 - Classes de domínio (modelos)
