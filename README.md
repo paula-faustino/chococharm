@@ -7,7 +7,7 @@ Sistema de gestão para a fábrica de chocolates ChocoCharm, voltado para contro
 - Mayara Santana - [GitHub](https://github.com/mayara8666 )
 - Paula Faustino - [GitHub](https://github.com/paula-faustino )
 
-# 🍫 ChocoCharm - Sistema de Fabricação de Chocolate
+# 🍫 ChocoCharm - Organização
 
 ## 📅 Roteiro de Desenvolvimento (Equipe: 3 pessoas)
 
