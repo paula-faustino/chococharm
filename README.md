@@ -1,20 +1,23 @@
 ## 🍫 ChocoCharm - Sistema de Fabricação de Chocolate
-
+---
 Sistema de gestão para a fábrica de chocolates ChocoCharm, voltado para controle de produção, estoque e qualidade dos produtos.
 
+---
 ## 👥 Desenvolvedores
 - KaueAlvess - [GitHub](https://github.com/KaueAlvess )
 - Mayara Santana - [GitHub](https://github.com/mayara8666 )
 - Paula Faustino - [GitHub](https://github.com/paula-faustino )
-
+  
+---
 🍫 ChocoCharm - Organização
 
 🔧 Tecnologias Utilizadas:
 
-Linguagem: C#
-Banco de Dados: MySQL
-IDE: Visual Studio
-Controle de Versão: Git + GitHub/GitLab
+- Linguagem: C#
+- Banco de Dados: MySQL
+- IDE: Visual Studio
+- Controle de Versão: Git + GitHub/GitLab
+
 ---
 ## 👥 Divisão de Tarefas por Desenvolvedor
 ---
@@ -39,6 +42,7 @@ Entregáveis:
 Script SQL funcional
 Classe Conexao.cs e DAO.cs base
 Métodos de inserção/consulta/teste funcionando
+
 ---
 🧑‍💻 Dev 2 – Interface Gráfica (Frontend)
 -KaueAlvess - [GitHub](https://github.com/KaueAlvess )
@@ -63,6 +67,7 @@ Pasta Telas/Forms completa
 Telas funcionais com navegação
 Validações básicas (campos vazios, tipos)
 Código limpo e organizado
+
 ---
 🧑‍💻 Dev 3 – Lógica de Negócio e Integração
 - Mayara Santana - [GitHub](https://github.com/mayara8666 )
@@ -87,6 +92,7 @@ Pasta Modelos/Classes completas
 Pasta Negocio/Regras com lógica implementada
 Funções de cálculo e validação de negócio
 Logs ou mensagens de erro tratadas
+
 ---
 ## 🧱 Módulos Principais do Sistema
 1. Cadastros
