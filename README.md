@@ -45,6 +45,7 @@ Métodos de inserção/consulta/teste funcionando
 
 ---
 🧑‍💻 Dev 2 – Interface Gráfica (Frontend)
+
 -KaueAlvess - [GitHub](https://github.com/KaueAlvess )
 
 Responsabilidades:
