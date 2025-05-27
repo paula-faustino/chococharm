@@ -1,189 +1,100 @@
-# 🏘️ Aluga-Lá - Sistema de Aluguel e Venda de Imóveis
+🍫 ChocoCharm - Sistema de Fabricação de Chocolate
+Sistema de gestão para a fábrica de chocolates ChocoCharm, voltado para controle de produção, estoque e qualidade dos produtos.
 
-Sistema de gestão e intermediação de imóveis para locação temporária ou venda, inspirado em plataformas como Airbnb, com foco na usabilidade, integração de pagamento e funcionalidades intuitivas para usuários e anfitriões.
-
----
 ## 👥 Desenvolvedores
 - KaueAlvess - [GitHub](https://github.com/KaueAlvess )
 - Mayara Santana - [GitHub](https://github.com/mayara8666 )
 - Paula Faustino - [GitHub](https://github.com/paula-faustino )
----
 
-## 🎯 Objetivo do Sistema
-
-Criar uma plataforma web para aluguel e venda de imóveis, com recursos para:
-
-* Cadastro e gerenciamento de usuários (anfitriões e hóspedes)
-* Cadastro de imóveis com fotos, descrição e disponibilidade
-* Busca e filtros de imóveis por localização, datas e preços
-* Sistema de reservas com integração de pagamento
-* Avaliação dos imóveis e usuários
-* Painel administrativo para monitoramento das operações
-
----
-
-## 🔧 Tecnologias Utilizadas
-
+🍫 ChocoCharm - Organização
+📅 Roteiro de Desenvolvimento (Equipe: 3 pessoas)
+🔧 Tecnologias Utilizadas:
 Linguagem: C#
 Banco de Dados: MySQL
 IDE: Visual Studio
 Controle de Versão: Git + GitHub/GitLab
+👥 Divisão de Tarefas por Desenvolvedor
+🧑‍💻 Dev 1 – Banco de Dados & Acesso a Dados
+- Paula Faustino - [GitHub](https://github.com/paula-faustino )
+Responsabilidades:
 
----
+Modelagem do banco de dados (tabelas principais)
+Scripts SQL para criação das tabelas
+Camada de acesso a dados (DAL) em C#
+Integração MySQL com C# (MySql.Data)
+Testes de conexão e CRUD básico
+Tarefas Específicas:
 
-## 📅 Planejamento de Desenvolvimento (Equipe: 3 pessoas)
+Criar modelo ER do sistema
+Criar tabelas: Produtos, MateriasPrimas, LotesProducao, Estoque, Usuarios
+Implementar métodos de CRUD genéricos
+Garantir segurança nas consultas (SQL injection)
+Entregáveis:
 
-### Etapa 1: Levantamento de Requisitos (1 semana)
+Script SQL funcional
+Classe Conexao.cs e DAO.cs base
+Métodos de inserção/consulta/teste funcionando
+🧑‍💻 Dev 2 – Interface Gráfica (Frontend)
 
-**Todos os membros**
+Responsabilidades:
+-KaueAlvess - [GitHub](https://github.com/KaueAlvess )
+Desenvolvimento das telas do sistema
+Organização visual e navegação
+Tratamento de eventos dos formulários
+Validação de campos na interface
+Integração com camada de negócio
+Tarefas Específicas:
 
-* Discussão de funcionalidades
-* Criação de fluxos de usuários
-* Documento de requisitos
+Criar formulários iniciais (Login, Menu Principal)
+Formulário de cadastro de produtos
+Formulário de controle de produção
+Formulário de estoque
+Layout intuitivo e padronizado
+Entregáveis:
 
-**Entregáveis:**
+Pasta Telas/Forms completa
+Telas funcionais com navegação
+Validações básicas (campos vazios, tipos)
+Código limpo e organizado
+🧑‍💻 Dev 3 – Lógica de Negócio e Integração
+- Mayara Santana - [GitHub](https://github.com/mayara8666 )
+Responsabilidades:
 
-* Lista de funcionalidades
-* Diagrama de fluxo de usuário
-* Documento de requisitos técnicos
+Lógica de negócios do sistema
+Classes de domínio (modelos)
+Integração entre DAL e Interface
+Gerenciamento de fluxo de produção e estoque
+Regras de validação de negócio
+Tarefas Específicas:
 
----
+Criar classes modelo: Produto, MateriaPrima, Lote, ItemEstoque
+Implementar regras: validade, quantidade mínima, custo de produção
+Integrar formulários às funções de negócio
+Gerenciar fluxo entre módulos
+Garantir consistência nos dados
+Entregáveis:
 
-### Etapa 2: Arquitetura e Design do Sistema (2 semanas)
-
-**KaueAlvess (UI/UX + Frontend)**
-**Mayara Santana (Backend + Lógica de Negócio)**
-**Paula Faustino (Modelagem de Banco de Dados)**
-
-**Atividades:**
-
-* Modelagem do banco de dados (ER)
-* Design de interfaces principais (mockups)
-* Definição da arquitetura backend (REST API)
-
-**Entregáveis:**
-
-* Diagrama ER
-* Protótipos das telas principais
-* Estrutura do backend (pastas, endpoints iniciais)
-
----
-
-### Etapa 3: Desenvolvimento (4 semanas)
-
-#### 🧑‍💻 Dev 1 – Backend & Banco de Dados
-
-**- Paula Faustino - [GitHub](https://github.com/paula-faustino )**
-**Responsabilidades:**
-
-* Modelagem e criação das tabelas: `Usuarios`, `Imoveis`, `Reservas`, `Pagamentos`, `Avaliacoes`
-* Criação de APIs RESTful
-* Segurança (hash de senhas, autenticação JWT)
-
-**Entregáveis:**
-
-* Banco de dados funcional
-* APIs para CRUD completo
-
----
-
-#### 🧑‍💻 Dev 2 – Frontend e Interface
-
-**- KaueAlvess - [GitHub](https://github.com/KaueAlvess )**
-**Responsabilidades:**
-
-* Telas: Login, Cadastro, Listagem de Imóveis, Detalhes, Reserva
-* Navegação entre páginas
-* Responsividade e design amigável
-* Consumo das APIs backend
-
-**Entregáveis:**
-
-* Páginas principais funcionando
-* Validação de formulários
-* Layouts responsivos (mobile/desktop)
-
----
-
-#### 🧑‍💻 Dev 3 – Lógica de Negócio & Integração
-
-**- Mayara Santana - [GitHub](https://github.com/mayara8666 )**
-**Responsabilidades:**
-
-* Classes de domínio: Usuário, Imóvel, Reserva, Avaliação
-* Validações de regras de negócio: disponibilidade, datas, conflito de reservas
-* Integração frontend-backend
-* Geração de logs e mensagens de erro
-
-**Entregáveis:**
-
-* Classes modelo completas
-* Controle de reservas com regras aplicadas
-* APIs conectadas ao frontend
-
----
-
-### Etapa 4: Testes e Validação (2 semanas)
-
-**Todos (com foco em QA – Mayara Santana)**
-
-**Atividades:**
-
-* Testes unitários e de integração
-* Testes de interface e usabilidade
-* Correção de bugs
-
-**Entregáveis:**
-
-* Relatórios de testes
-* Correções aplicadas
-* Plataforma funcional sem bugs críticos
-
----
-
-### Etapa 5: Lançamento e Feedback (1 semana)
-
-**Todos (liderança por KaueAlvess)**
-
-**Atividades:**
-
-* Deploy da aplicação
-* Coleta de feedback com usuários reais
-* Ajustes finais
-
-**Entregáveis:**
-
-* Sistema online
-* Relatório de feedback
-* Melhorias com base nas sugestões
-
----
-
-## 🧱 Módulos do Sistema
-
-1. **Cadastro e Login**
-
-   * Usuário anfitrião ou hóspede
-   * Autenticação JWT
-2. **Gerenciamento de Imóveis**
-
-   * Cadastro com fotos, descrição, localização
-   * Edição e exclusão de imóveis
-3. **Busca e Filtros**
-
-   * Localização, tipo, faixa de preço, disponibilidade
-4. **Sistema de Reservas**
-
-   * Escolha de datas
-   * Cálculo de valor
-   * Confirmação e pagamento online
-5. **Avaliações**
-
-   * Avaliação do imóvel pelo hóspede
-   * Avaliação do hóspede pelo anfitrião
-6. **Painel Administrativo**
-
-   * Visualização de reservas, usuários, imóveis
-   * Gerenciamento de conflitos e suporte
-
----
+Pasta Modelos/Classes completas
+Pasta Negocio/Regras com lógica implementada
+Funções de cálculo e validação de negócio
+Logs ou mensagens de erro tratadas
+🧱 Módulos Principais do Sistema
+1. Cadastros
+Produtos
+Matérias-primas
+Fornecedores
+Usuários
+2. Controle de Produção
+Registro de lotes
+Data de fabricação e validade
+Quantidade produzida
+Status do lote
+3. Gestão de Estoque
+Entrada e saída de materiais
+Nível mínimo de estoque
+Histórico de movimentação
+4. Relatórios
+Produtos mais fabricados
+Consumo de matéria-prima
+Resumo de estoque
+Exportação para PDF ou Excel (opcional)
